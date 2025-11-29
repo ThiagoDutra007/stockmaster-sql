@@ -1,22 +1,135 @@
-# StockMaster - Scripts SQL
+📘 StockMaster SQL — Scripts de Manipulação de Dados (DML)
 
-Projeto acadêmico contendo scripts SQL completos para criação e manipulação de dados no banco de dados **StockMaster**.
+Este repositório contém os scripts SQL desenvolvidos para a quarta parte da atividade prática da disciplina de Banco de Dados, aplicando conceitos de modelagem lógica, integridade referencial, DML e uso de ferramentas reais (MySQL Workbench).
 
-## 📁 Arquivos incluídos
-- **01_create_database.sql** – Criação das tabelas do banco  
-- **02_insert_data.sql** – Inserção de dados iniciais  
-- **03_select_queries.sql** – Consultas SELECT com JOIN, WHERE, ORDER BY  
-- **04_update_commands.sql** – Três comandos UPDATE  
-- **05_delete_commands.sql** – Três comandos DELETE  
+O objetivo é demonstrar a capacidade de criar, manipular e consultar dados em um banco relacional, integrando teoria e prática em um mini-mundo simples, porém funcional.
 
-## 🚀 Como executar
-1. Abra o MySQL Workbench ou outro cliente SQL  
-2. Execute primeiro o arquivo **01_create_database.sql**  
-3. Em seguida execute os outros scripts na ordem numérica  
+📌 Conteúdo do Repositório
+📁 stockmaster-sql/
+│
+├── README.md                 → Documentação completa
+├── inserts.sql               → Scripts de INSERT para povoamento das tabelas
+├── selects.sql               → Consultas SELECT com filtros, JOIN e ordenação
+├── updates_deletes.sql       → Comandos UPDATE e DELETE com condições reais
+└── sql_scripts/              → Pasta opcional com versões organizadas dos scripts
 
-## 🌐 Requisitos
-- MySQL 5.7 ou superior  
-- Cliente SQL (Workbench recomendado)
+🏗️ Mini-Mundo do Projeto
 
-## 📜 Autor
-Projeto desenvolvido para atividade acadêmica.
+O mini-mundo representa um sistema básico de gestão de estoque, contendo entidades típicas como:
+
+Produto
+
+Categoria
+
+Fornecedor
+
+Estoque
+
+Movimentação de Estoque
+
+As tabelas foram modeladas previamente na parte 3 da atividade (Projeto Lógico), e agora são manipuladas com comandos SQL.
+
+💾 Scripts Incluídos
+1️⃣ INSERT — Povoamento Inicial
+
+Arquivo: inserts.sql
+
+Contém comandos para inserir registros essenciais nas principais tabelas do sistema:
+
+Categorias
+
+Produtos
+
+Fornecedores
+
+Estoque inicial
+
+Objetivo: permitir que o banco seja iniciado rapidamente com dados reais para testes.
+
+2️⃣ SELECT — Consultas com Filtros e Relacionamentos
+
+Arquivo: selects.sql
+
+As consultas incluem:
+
+✔ SELECT simples
+✔ WHERE com filtros
+✔ ORDER BY para ordenação
+✔ LIMIT para limitar resultados
+✔ INNER JOIN entre tabelas relacionadas
+
+Essas consultas simulam operações reais, como:
+
+Listar produtos por categoria
+
+Buscar estoque baixo
+
+Consultar produtos e seus fornecedores
+
+3️⃣ UPDATE & DELETE — Manipulação e Limpeza
+
+Arquivo: updates_deletes.sql
+
+Inclui:
+
+✔ 3 comandos UPDATE
+✔ 3 comandos DELETE
+✔ Todos com condições (WHERE)
+
+Situações reais simuladas:
+
+Atualizar preços
+
+Alterar estoque
+
+Excluir produtos descontinuados
+
+Remover fornecedores inativos
+
+🛠️ Ferramentas Utilizadas
+
+MySQL Workbench
+
+MySQL Community Server
+
+Git
+
+GitHub
+
+🚀 Como Executar os Scripts
+1. Clone o repositório
+git clone https://github.com/ThiagoDutra007/stockmaster-sql.git
+
+2. Abra o MySQL Workbench
+3. Importe ou execute os scripts
+
+Na ordem:
+
+inserts.sql
+
+selects.sql
+
+updates_deletes.sql
+
+🎯 Objetivos de Aprendizagem Atendidos
+Taxonomia de Bloom
+
+✔ Aplicar comandos SQL reais
+✔ Criar scripts completos de manipulação
+
+Taxonomia de Fink
+
+✔ Aplicação: uso real do MySQL Workbench
+✔ Integração: modelo lógico + DML
+✔ Aprender a aprender: resolução de erros SQL
+
+👤 Autor
+
+Thiago Dutra
+Atividade Prática — Banco de Dados
+Curso: Análise e Desenvolvimento de Sistemas
+
+📄 Licença
+
+Este repositório é de uso acadêmico.
+Sinta-se à vontade para estudar, adaptar ou expandir.
